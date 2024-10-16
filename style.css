@@ -1,0 +1,196 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333; /* Dark background */
+  padding: 10px 20px; /* Padding for navbar */
+}
+
+.navbar .logo {
+  color: white; /* Logo color */
+  font-size: 24px; /* Logo font size */
+}
+
+.nav-links {
+  list-style: none; /* Remove bullet points */
+  display: flex; /* Flex layout for links */
+  gap: 20px; /* Space between links */
+}
+
+.nav-links li a {
+  color: white; /* Link color */
+  text-decoration: none; /* Remove underline */
+}
+
+.nav-links li a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Main Content Styles */
+.mainContent {
+  padding: 40px; /* Padding for the main content */
+  background-color: #f0f0f0; /* Light background for contrast */
+  text-align: center; /* Center align text */
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.mainTitle {
+  font-size: 2em; /* Font size for the title */
+  margin-bottom: 20px; /* Space below title */
+}
+
+.mainParagraph {
+  font-size: 1.2em; /* Font size for the paragraph */
+  margin-bottom: 20px; /* Space below paragraph */
+}
+
+.signUpButton {
+  background-color: #ff6600; /* Button color */
+  color: white; /* Text color */
+  border: none; /* Remove default border */
+  padding: 10px 20px; /* Add padding */
+  border-radius: 5px; /* Round corners */
+  cursor: pointer; /* Change cursor on hover */
+}
+
+.signUpButton:hover {
+  background-color: #e55c00; /* Darken button on hover */
+}
+
+/* Image Placeholder Styles */
+.imagePlaceholder {
+  width: 100%; /* Full width of the container */
+  max-width: 350px; /* Limit max width */
+  height: 250px; /* Height of the placeholder */
+  background-color: #f0f0f0; /* Light background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px dashed #ccc; /* Dashed border */
+  margin: 20px auto; /* Center horizontally with margin */
+}
+
+/* Boxes Section Styles */
+.boxSectionTitle {
+  text-align: center; /* Center align the section title */
+  margin: 20px 0; /* Space above and below the title */
+}
+
+.fourBoxSection {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping for responsive design */
+  justify-content: center; /* Center boxes */
+  gap: 20px; /* Space between boxes */
+  padding: 20px; /* Padding around the section */
+}
+
+.fourBoxes {
+  width: 150px; /* Fixed width for boxes */
+  border: 5px solid black; /* Border around boxes */
+  border-radius: 10px; /* Rounded corners */
+  background-color: white; /* White background for boxes */
+  padding: 10px; /* Space inside boxes */
+  text-align: center; /* Center align text in boxes */
+}
+
+.boxContent {
+  width: 100%; /* Full width */
+  height: 150px; /* Fixed height */
+  object-fit: cover; /* Cover for images */
+  border-radius: 5px; /* Rounded corners for images */
+}
+
+.boxDescription {
+  margin-top: 8px; /* Space between image and text */
+  font-size: 14px; /* Font size for description */
+  color: #333; /* Dark gray color for text */
+}
+
+/* Quote Section Styles */
+.quoteSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* Height of the quote section */
+  background-color: #f0f0f0; /* Light background color */
+  padding: 20px;
+  margin: 20px; /* Space around the section */
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.quoteText {
+  font-size: 1.5em; /* Font size for the quote */
+  text-align: center; /* Center align the quote */
+  font-style: italic; /* Italic for the quote */
+  color: #333; /* Dark gray for the quote */
+  max-width: 800px; /* Limit width */
+}
+
+/* Call-to-Action Section Styles */
+.callToActionSection {
+  text-align: center; /* Center align the content */
+  padding: 40px; /* Padding around the section */
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+/* Footer Styles */
+.socialFooter {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.socialFooter p {
+  margin: 5px 0; /* Space for footer text */
+}
+
+.socialLinks {
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* No padding */
+  margin: 0; /* No margin */
+  display: flex; /* Flex layout for social links */
+  justify-content: center; /* Center align social links */
+  gap: 20px; /* Space between links */
+}
+
+.socialLinks li a {
+  color: #ff6600; /* Link color */
+  text-decoration: none; /* Remove underline */
+}
+
+.socialLinks li a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.copyright {
+  font-size: 0.9em; /* Smaller font size for copyright */
+  margin-top: 10px; /* Space above copyright */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+  .fourBoxSection {
+    flex-direction: column; /* Stack boxes vertically */
+    align-items: center; /* Center align boxes */
+  }
+
+  .fourBoxes {
+    width: 80%; /* Full width for boxes on small screens */
+  }
+}
